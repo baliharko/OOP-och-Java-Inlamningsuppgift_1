@@ -11,11 +11,6 @@ import java.util.Scanner;
 
 public class Inlämningsuppgift1_Main {
     public static void main(String[] args) {
-
-//        AnimalHotel.showPetInfo("dogge");
-//        AnimalHotel.showPetInfo("hypno");
-//        AnimalHotel.showPetInfo("venus");
-
         Scanner scanner = new Scanner(System.in);
 
         while(true) {
