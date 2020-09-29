@@ -10,15 +10,8 @@ package oop.inlämningsuppgift1;
 public class Inlämningsuppgift1_Main {
     public static void main(String[] args) {
 
-        IPetGuest p = new Dog("feedy", 8);
-        IPetGuest q = new Cat("caaty", 2);
-        IPetGuest r = new Snake("snaakey", 4);
-        AnimalHotel.addToHotel(new Dog("Sixten", 5));
-        AnimalHotel.addToHotel(p);
-        AnimalHotel.addToHotel(q);
+        AnimalHotel healthyPets = new AnimalHotel();
 
-        System.out.println(p.getFeed() + " " + Math.round(p.getPortionGrams()));
-        System.out.println(q.getFeed() + " " + Math.round(q.getPortionGrams()));
-        System.out.println(r.getFeed() + " " + Math.round(r.getPortionGrams()));
+        AnimalHotel.printGuests();
     }
 }

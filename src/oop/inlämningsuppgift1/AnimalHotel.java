@@ -1,6 +1,6 @@
 package oop.inlämningsuppgift1;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -11,9 +11,21 @@ import java.util.List;
  */
 
 public class AnimalHotel {
-    private static List<IPetGuest> allAnimals = new ArrayList<>();
+    private static List<IPetGuest> allAnimals = new LinkedList<>();
 
-    public static void addToHotel(IPetGuest newGuest) {
-        allAnimals.add(newGuest);
+    private static void fillPetGuestlist() {
+        allAnimals.add(new Dog("Sixten", 5));
+        allAnimals.add(new Dog("Dogge", 10));
+        allAnimals.add(new Cat("Venus", 5));
+        allAnimals.add(new Cat("Ove", 3));
+        allAnimals.add(new Snake("Hypno", 1));
+    }
+
+    public AnimalHotel() {
+        fillPetGuestlist();
+    }
+
+    public static void printGuests() {
+        allAnimals.forEach(System.out::println);
     }
 }
