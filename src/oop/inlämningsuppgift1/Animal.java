@@ -7,7 +7,7 @@ package oop.inlämningsuppgift1;
  * 20:54
  */
 
-public class Animal {
+public abstract class Animal implements IPetGuest{
 
     private String name;
     private double weight;

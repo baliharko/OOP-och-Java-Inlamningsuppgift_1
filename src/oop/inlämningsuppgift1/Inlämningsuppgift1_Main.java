@@ -9,6 +9,7 @@ package oop.inlämningsuppgift1;
 
 public class Inlämningsuppgift1_Main {
     public static void main(String[] args) {
-        IFurAnimal f = new Dog("hej", 6);
+        AnimalHotel.addToHotel(new Dog("Sixten", 5));
+        AnimalHotel.addToHotel(new Dog("Sixten", 5));
     }
 }
