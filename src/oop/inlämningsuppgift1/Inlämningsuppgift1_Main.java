@@ -13,7 +13,6 @@ public class Inlämningsuppgift1_Main {
         AnimalHotel healthyPets = new AnimalHotel();
 
         AnimalHotel.printGuests();
-
         
     }
 }
