@@ -9,7 +9,14 @@ package oop.inlämningsuppgift1;
 
 public class Snake extends Animal {
 
+    private Feed feed;
+
     public Snake(String name, double weight) {
         super(name, weight);
+        this.feed = Feed.ORMPELLETS;
+    }
+
+    public Feed getFeed() {
+        return this.feed;
     }
 }

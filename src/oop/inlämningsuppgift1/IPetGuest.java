@@ -12,4 +12,6 @@ public interface IPetGuest {
     default double calculatePortion() {
         return 20;
     }
+
+    Feed getFeed();
 }
