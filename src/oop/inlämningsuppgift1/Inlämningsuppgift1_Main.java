@@ -17,8 +17,8 @@ public class Inlämningsuppgift1_Main {
         AnimalHotel.addToHotel(p);
         AnimalHotel.addToHotel(q);
 
-        System.out.println(p.getFeed() + " " + Math.round(p.calculatePortion()));
-        System.out.println(q.getFeed() + " " + Math.round(q.calculatePortion()));
-        System.out.println(r.getFeed() + " " + Math.round(r.calculatePortion()));
+        System.out.println(p.getFeed() + " " + Math.round(p.getPortionGrams()));
+        System.out.println(q.getFeed() + " " + Math.round(q.getPortionGrams()));
+        System.out.println(r.getFeed() + " " + Math.round(r.getPortionGrams()));
     }
 }

@@ -11,16 +11,21 @@ public abstract class Animal implements IPetGuest{
 
     private String name;
     private double weight;
+    private Feed feed;
 
     public Animal() {}
 
-    public Animal(String name, double weight) {
+    public Animal(String name, double weight, Feed feed) {
         this.name = name;
         this.weight = weight;
+        this.feed = feed;
     }
 
     public double getWeight() {
         return this.weight;
     }
 
+    public Feed getFeed() {
+        return this.feed;
+    }
 }

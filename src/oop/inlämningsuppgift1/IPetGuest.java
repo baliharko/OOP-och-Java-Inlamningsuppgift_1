@@ -9,7 +9,7 @@ package oop.inlämningsuppgift1;
 
 public interface IPetGuest {
 
-    default double calculatePortion() {
+    default double getPortionGrams() {
         return 20;
     }
 

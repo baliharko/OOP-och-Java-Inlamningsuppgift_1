@@ -9,20 +9,12 @@ package oop.inlämningsuppgift1;
 
 public class Dog extends Animal {
 
-    private Feed feed;
-
     public Dog(String name, double weight) {
-        super(name, weight);
-        this.feed = Feed.HUNDFODER;
+        super(name, weight, Feed.HUNDFODER);
     }
 
     @Override
-    public double calculatePortion() {
+    public double getPortionGrams() {
         return this.getWeight() * 1000 / 100;
-    }
-
-    @Override
-    public Feed getFeed() {
-        return this.feed;
     }
 }
