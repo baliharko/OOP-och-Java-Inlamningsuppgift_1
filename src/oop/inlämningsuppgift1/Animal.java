@@ -9,6 +9,18 @@ package oop.inlämningsuppgift1;
 
 public class Animal {
 
+    private String name;
+    private double weight;
 
+    public Animal() {}
+
+    public Animal(String name, double weight) {
+        this.name = name;
+        this.weight = weight;
+    }
+
+    public double getWeight() {
+        return this.weight;
+    }
 
 }
