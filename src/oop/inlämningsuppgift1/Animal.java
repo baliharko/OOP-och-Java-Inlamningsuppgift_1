@@ -29,6 +29,10 @@ public abstract class Animal implements IPetGuest{
         return this.feed;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     @Override
     public String toString() {
         return String.format("Namn: %-12sVikt: %-10.0fFoder: %s", this.name, this.weight, this.feed.toString().toLowerCase());
