@@ -1,7 +1,9 @@
 package oop.inlämningsuppgift1;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Inlamningsuppgift_1 <br>
@@ -27,5 +29,15 @@ public class AnimalHotel {
 
     public static void printGuests() {
         allAnimals.forEach(System.out::println);
+    }
+
+    public static void showPetInfo(String name) {
+        if (name == null)
+            return;
+        for (IPetGuest pet : allAnimals) {
+            if (name.equals(pet.getName().toLowerCase())) {
+                System.out.println(pet.getName() + " " + Math.round(pet.getPortionGrams()) + "g " + pet.getFeed());
+            }
+        }
     }
 }

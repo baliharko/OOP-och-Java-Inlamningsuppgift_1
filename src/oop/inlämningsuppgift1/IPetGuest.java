@@ -14,4 +14,6 @@ public interface IPetGuest {
     }
 
     Feed getFeed();
+
+    String getName();
 }
