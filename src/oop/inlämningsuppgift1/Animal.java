@@ -8,4 +8,7 @@ package oop.inlämningsuppgift1;
  */
 
 public class Animal {
+
+
+
 }
