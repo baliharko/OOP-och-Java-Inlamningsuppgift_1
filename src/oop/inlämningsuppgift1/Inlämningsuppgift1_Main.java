@@ -19,13 +19,12 @@ public class Inlämningsuppgift1_Main {
         Scanner scanner = new Scanner(System.in);
 
         while(true) {
-            System.out.println("Ange djurets namn: ");
+            System.out.println("Ange djurets namn:");
             String input = scanner.nextLine().toLowerCase();
+
             String s = AnimalHotel.showPetInfo(input);
-            if (s == null)
-                System.out.println("Inget djur med detta namn registrerat.");
-            else
-                System.out.println(s);
+            s = s == null ? "Inget djur med detta namn registrerat." : s;
+            System.out.println(s);
 
             System.out.println("\nVill du kolla upp en annan gäst? j/n");
             String prompt = scanner.nextLine().toLowerCase();

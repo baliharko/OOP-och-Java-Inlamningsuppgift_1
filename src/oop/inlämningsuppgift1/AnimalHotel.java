@@ -1,9 +1,7 @@
 package oop.inlämningsuppgift1;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Inlamningsuppgift_1 <br>
@@ -25,10 +23,6 @@ public class AnimalHotel {
         addAnimals.add(new Snake("Hypno", 1));
 
         return addAnimals;
-    }
-
-    public static void printPets() {
-        allAnimals.forEach(System.out::println);
     }
 
     public static String showPetInfo(String name) {
