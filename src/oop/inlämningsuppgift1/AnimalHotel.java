@@ -27,17 +27,18 @@ public class AnimalHotel {
         return addAnimals;
     }
 
-    public static void printGuests() {
+    public static void printPets() {
         allAnimals.forEach(System.out::println);
     }
 
-    public static void showPetInfo(String name) {
+    public static String showPetInfo(String name) {
         if (name == null)
-            return;
+            return null;
         for (IPetGuest pet : allAnimals) {
             if (name.equals(pet.getName().toLowerCase())) {
-                System.out.println(pet.getName() + " " + Math.round(pet.getPortionGrams()) + "g " + pet.getFeed());
+                return pet.getName() + " " + Math.round(pet.getPortionGrams()) + "g " + pet.getFeed();
             }
         }
+        return null;
     }
 }
