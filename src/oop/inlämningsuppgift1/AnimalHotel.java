@@ -11,6 +11,7 @@ import java.util.List;
  */
 
 public class AnimalHotel {
+
     private static List<IPetGuest> allAnimals = fillPetGuestlist();
 
     private static List<IPetGuest> fillPetGuestlist() {
@@ -25,12 +26,12 @@ public class AnimalHotel {
         return addAnimals;
     }
 
-    public static String showPetInfo(String name) {
+    private static String showPetInfo(String name) {
         if (name == null)
             return null;
         for (IPetGuest pet : allAnimals) {
             if (name.equals(pet.getName().toLowerCase())) {
-                return pet.getFeed().type + " " +
+                return pet.getFeed().type + "en " +
                         pet.getName() + " ska få " +
                         Math.round(pet.getPortionGrams()) + "g " +
                         pet.getFeed().toString().toLowerCase() + ".";
@@ -39,9 +40,13 @@ public class AnimalHotel {
         return null;
     }
 
-    public static void getGuest(String name) {
+    public static String getGuest(String name) {
         String s = AnimalHotel.showPetInfo(name);
-        s = s == null ? "Inget djur med detta namn registrerat." : s;
-        System.out.println(s);
+        s = s == null ? "" : s;
+
+        if (s.isBlank())
+            System.out.print("Inget djur med detta namn registrerat.");
+
+        return s;
     }
 }

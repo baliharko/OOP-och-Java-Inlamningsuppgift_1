@@ -14,16 +14,21 @@ public class Inlämningsuppgift1_Main {
         Scanner scanner = new Scanner(System.in);
 
         while(true) {
-            System.out.println("Ange djurets namn:");
+            System.out.println("Vilket djur ska få mat?");
             String input = scanner.nextLine().toLowerCase();
 
-//            String s = AnimalHotel.showPetInfo(input);
-//            s = s == null ? "Inget djur med detta namn registrerat." : s;
-//            System.out.println(s);
+            if (input.isBlank()) {
+                System.out.println("Vill du avsluta? [j/n]");
+                if (scanner.nextLine().toLowerCase().equals("j"))
+                    break;
+                else
+                    continue;
+            }
 
-            AnimalHotel.getGuest(input);
+            String guest = AnimalHotel.getGuest(input);
+            System.out.println(guest);
 
-            System.out.println("\nVill du kolla upp en annan gäst? j/n");
+            System.out.println("\nVill du kolla upp en annan gäst? [j/n]");
             String prompt = scanner.nextLine().toLowerCase();
 
             if (prompt.equals("n"))

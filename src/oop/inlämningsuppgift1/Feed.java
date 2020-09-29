@@ -9,7 +9,7 @@ package oop.inlämningsuppgift1;
 
 // Enum av de olika sortens djurmat
 public enum Feed {
-    KATTFODER("Katten"), HUNDFODER("Hunden"), ORMPELLETS("Ormen");
+    KATTFODER("Katt"), HUNDFODER("Hund"), ORMPELLETS("Orm");
 
     public final String type;
 

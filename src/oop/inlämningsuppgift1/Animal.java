@@ -9,6 +9,7 @@ package oop.inlämningsuppgift1;
 
 public abstract class Animal implements IPetGuest{
 
+    // Inkapsling - privata variabler endast nåbara med publika getters
     private String name;
     private double weight;
     private Feed feed;
