@@ -10,8 +10,6 @@ package oop.inlämningsuppgift1;
 public class Inlämningsuppgift1_Main {
     public static void main(String[] args) {
 
-        AnimalHotel healthyPets = new AnimalHotel();
-
         AnimalHotel.printGuests();
     }
 }
