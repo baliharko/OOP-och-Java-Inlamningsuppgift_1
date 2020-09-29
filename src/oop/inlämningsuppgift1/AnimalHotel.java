@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AnimalHotel {
 
-    private static List<IPetGuest> allAnimals = fillPetGuestlist();
+    private static List<IPetGuest> allAnimals = fillPetGuestlist(); // Alla djur
 
     private static List<IPetGuest> fillPetGuestlist() {
         List<IPetGuest> addAnimals = new ArrayList<>();
@@ -26,7 +26,8 @@ public class AnimalHotel {
         return addAnimals;
     }
 
-    private static String showPetInfo(String name) {
+    // Söker igenom allAnimals, används i getGuest().
+    private static String getPetFromList(String name) {
         if (name == null)
             return null;
         for (IPetGuest pet : allAnimals) {
@@ -40,12 +41,13 @@ public class AnimalHotel {
         return null;
     }
 
+    //Anropas från main, anropar getPetFromList()
     public static String getGuest(String name) {
-        String s = AnimalHotel.showPetInfo(name);
-        s = s == null ? "" : s;
+        String s = AnimalHotel.getPetFromList(name.toLowerCase());
+        s = s == null ? "" : s; // returnerar tom sträng om null, så det blir lite tjusigt istället för null-utskrift
 
         if (s.isBlank())
-            System.out.print("Inget djur med detta namn registrerat.");
+            System.out.print("Inget djur med detta namn finns registrerat.");
 
         return s;
     }

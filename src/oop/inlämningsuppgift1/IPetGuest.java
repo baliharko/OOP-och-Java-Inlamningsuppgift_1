@@ -7,7 +7,7 @@ package oop.inlämningsuppgift1;
  * 11:07
  */
 
-// Interface för alla djuren
+// Interface för alla djur
 public interface IPetGuest {
 
     default double getPortionGrams() {

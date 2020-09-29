@@ -13,10 +13,12 @@ public class Inlämningsuppgift1_Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Loopar tills man avslutar
         while(true) {
             System.out.println("Vilket djur ska få mat?");
-            String input = scanner.nextLine().toLowerCase();
+            String input = scanner.nextLine();
 
+            // Kolla om blank & avslut prompt
             if (input.isBlank()) {
                 System.out.println("Vill du avsluta? [j/n]");
                 if (scanner.nextLine().toLowerCase().equals("j"))
@@ -26,7 +28,7 @@ public class Inlämningsuppgift1_Main {
             }
 
             String guest = AnimalHotel.getGuest(input);
-            System.out.println(guest);
+            System.out.println(guest); // blank om inget hittas. Felutskrift görs då från AnimalHotel.getGuest().
 
             System.out.println("\nVill du kolla upp en annan gäst? [j/n]");
             String prompt = scanner.nextLine().toLowerCase();

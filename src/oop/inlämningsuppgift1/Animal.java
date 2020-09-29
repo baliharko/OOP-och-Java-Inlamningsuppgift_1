@@ -16,7 +16,8 @@ public abstract class Animal implements IPetGuest{
 
     public Animal() {}
 
-    public Animal(String name, double weight, Feed feed) {
+    // Konstruktorn används bara i ärvda klasser
+    protected Animal(String name, double weight, Feed feed) {
         this.name = name;
         this.weight = weight;
         this.feed = feed;
