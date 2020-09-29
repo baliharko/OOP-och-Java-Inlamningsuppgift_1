@@ -24,13 +24,8 @@ public class Inlämningsuppgift1_Main {
             System.out.println("\nVill du kolla upp en annan gäst? j/n");
             String prompt = scanner.nextLine().toLowerCase();
 
-<<<<<<< HEAD
-        AnimalHotel.printGuests();
-        
-=======
             if (prompt.equals("n"))
                 break;
         }
->>>>>>> 654d999d940d1e0cf4dd0851a243ef1450b2e8e4
     }
 }
