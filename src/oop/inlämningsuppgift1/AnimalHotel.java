@@ -30,9 +30,18 @@ public class AnimalHotel {
             return null;
         for (IPetGuest pet : allAnimals) {
             if (name.equals(pet.getName().toLowerCase())) {
-                return pet.getName() + " " + Math.round(pet.getPortionGrams()) + "g " + pet.getFeed();
+                return pet.getFeed().type + " " +
+                        pet.getName() + " ska få " +
+                        Math.round(pet.getPortionGrams()) + "g " +
+                        pet.getFeed().toString().toLowerCase() + ".";
             }
         }
         return null;
+    }
+
+    public static void getGuest(String name) {
+        String s = AnimalHotel.showPetInfo(name);
+        s = s == null ? "Inget djur med detta namn registrerat." : s;
+        System.out.println(s);
     }
 }

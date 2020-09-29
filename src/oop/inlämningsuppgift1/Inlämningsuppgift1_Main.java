@@ -17,9 +17,11 @@ public class Inlämningsuppgift1_Main {
             System.out.println("Ange djurets namn:");
             String input = scanner.nextLine().toLowerCase();
 
-            String s = AnimalHotel.showPetInfo(input);
-            s = s == null ? "Inget djur med detta namn registrerat." : s;
-            System.out.println(s);
+//            String s = AnimalHotel.showPetInfo(input);
+//            s = s == null ? "Inget djur med detta namn registrerat." : s;
+//            System.out.println(s);
+
+            AnimalHotel.getGuest(input);
 
             System.out.println("\nVill du kolla upp en annan gäst? j/n");
             String prompt = scanner.nextLine().toLowerCase();
