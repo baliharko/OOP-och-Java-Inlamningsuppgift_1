@@ -27,7 +27,7 @@ public class Inlämningsuppgift1_Main {
                     continue;
             }
 
-            String guest = AnimalHotel.getGuest(input);
+            String guest = AnimalHotel.getGuest(input.trim());
             System.out.println(guest); // Blank om inget hittas. Felutskrift görs då från AnimalHotel.getGuest().
 
             System.out.println("\nVill du kolla upp en annan gäst? [j/n]");
