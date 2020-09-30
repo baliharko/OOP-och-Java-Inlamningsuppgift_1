@@ -32,7 +32,6 @@ public class Inlämningsuppgift1_Main {
 
             System.out.println("\nVill du kolla upp en annan gäst? [j/n]");
             String prompt = scanner.nextLine().toLowerCase();
-
             if (prompt.equals("n"))
                 break;
         }
