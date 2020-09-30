@@ -34,7 +34,7 @@ public class AnimalHotel {
             if (name.equals(pet.getName().toLowerCase())) {
                 return pet.getFeed().type + "en " +
                         pet.getName() + " ska få " +
-                        Math.round(pet.getPortionGrams()) + "g " +
+                        Math.round(pet.getPortionGrams()) + "g " + // Polymorfism - getPortionGrams()
                         pet.getFeed().toString().toLowerCase() + ".";
             }
         }
