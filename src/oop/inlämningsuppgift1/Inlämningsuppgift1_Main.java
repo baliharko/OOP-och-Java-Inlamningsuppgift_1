@@ -18,7 +18,7 @@ public class Inlämningsuppgift1_Main {
             System.out.println("Vilket djur ska få mat?");
             String input = scanner.nextLine();
 
-            // Kolla om blank & avslut prompt
+            // Kolla om blank & avslut-prompt
             if (input.isBlank()) {
                 System.out.println("Vill du avsluta? [j/n]");
                 if (scanner.nextLine().toLowerCase().equals("j"))
