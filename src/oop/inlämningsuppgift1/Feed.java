@@ -7,7 +7,7 @@ package oop.inlämningsuppgift1;
  * 11:19
  */
 
-// Enum av de olika sortens djurmat och typ
+// Enum för de olika sortens djurmat och typ
 public enum Feed {
     KATTFODER("Katt"), HUNDFODER("Hund"), ORMPELLETS("Orm");
 
