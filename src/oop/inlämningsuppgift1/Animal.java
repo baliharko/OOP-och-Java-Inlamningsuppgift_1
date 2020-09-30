@@ -7,6 +7,7 @@ package oop.inlämningsuppgift1;
  * 20:54
  */
 
+//Superklass
 public abstract class Animal implements IPetGuest{
 
     // Inkapsling - privata variabler endast nåbara med publika getters

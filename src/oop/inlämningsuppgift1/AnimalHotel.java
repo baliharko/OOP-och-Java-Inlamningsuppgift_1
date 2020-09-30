@@ -41,7 +41,8 @@ public class AnimalHotel {
         return null;
     }
 
-    //Anropas från main, anropar getPetFromList()
+    // Anropas från main, anropar getPetFromList()
+    // String om man skulle vilja skriva ut någon annanstans eller behandla informationen på något sätt i framtiden
     public static String getGuest(String name) {
         String s = AnimalHotel.getPetFromList(name.toLowerCase());
         s = s == null ? "" : s; // returnerar tom sträng om null, så det blir lite tjusigt istället för null-utskrift
